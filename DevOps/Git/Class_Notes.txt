@@ -357,11 +357,10 @@ Day 11 - 16th June 2026
 		
 		- git log -3 -- m2.txt
 		
-	- git show <commit_id>			# Get the Details of specific commit
+	- git show <commit_id>			# after commit Get the Details of specific commit 
 	
 	
-	- git diff
-			
+	- git diff  ---	is used to compare changes between files, commits, branches, or the working directory.Compare staged                        changes with last commit
 	
 	- GitIgnore ::::
 	
