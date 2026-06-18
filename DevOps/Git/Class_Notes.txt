@@ -399,7 +399,9 @@ Day 11 - 16th June 2026
 			project.docx
 			
 			add the commit .gitignore as a very first commit.
-
+unstage back to staging area:
+git restore --staged f1.txt f2.txt f3.doc f4.java
+git commit -m "Add meena.txt"
 
 	- Undo the Committed Changes ::::
 		
