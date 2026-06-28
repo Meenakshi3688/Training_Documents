@@ -211,7 +211,7 @@ Day 16 - 26th June 2026
 			
 		- Variables :
 
-			- Environment Variables :
+			- Environment Variables : Are the predefined variables.
 			
 				- Reserved Jenkins Keywords  - gets updated at every job execution
 				
