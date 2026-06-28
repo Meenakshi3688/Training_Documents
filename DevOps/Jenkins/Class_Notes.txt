@@ -223,7 +223,7 @@ Day 16 - 26th June 2026
 					Envi = 'QA' 
 				
 				
-			- User defined Variables :::
+			- User defined Variables ::: enable the This project is parameterixed inside the General.
 			
 Next:::
 					
