@@ -500,8 +500,11 @@ pipeline {
         }
     }
 }			
-			
-			
+after installing Publish Over SSH in test server . Now we have to connect to master server 
+got to system-> go below we find publish over
+there click add button 
+file the below details add the private key then save 
+now the test server connect to master server
 			
 			
 			
