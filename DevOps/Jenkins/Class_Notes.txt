@@ -421,7 +421,20 @@ Day 18 - 30th June 2026
 			Prod 
 				- Prod_Servers		*.war
 			
+devopsadmin@ip-172-31-6-74:~$ cd workspace/
+devopsadmin@ip-172-31-6-74:~/workspace$ ls
+pipeline_proj1  pipeline_proj1@tmp
+devopsadmin@ip-172-31-6-74:~/workspace$ cd pipeline_proj1
+devopsadmin@ip-172-31-6-74:~/workspace/pipeline_proj1$ ls
+README.md  bin  mvnw  mvnw.cmd  pom.xml  src  target
+devopsadmin@ip-172-31-6-74:~/workspace/pipeline_proj1$ cd target
+devopsadmin@ip-172-31-6-74:~/workspace/pipeline_proj1/target$ ls
+classes                         generated-sources       surefire-reports
+demo-1.0-SNAPSHOT               generated-test-sources  test-classes
+demo-1.0-SNAPSHOT.war           maven-archiver
+demo-1.0-SNAPSHOT.war.original  maven-status
 
+after we build the code then only the target folder will create and inside that artifact is created
 		
 
 	Setup the Target Tomcat Server :::
