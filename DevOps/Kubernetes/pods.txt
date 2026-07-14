@@ -17,18 +17,18 @@ spec:
     - containerPort: 80
 
 *******************************************************************
-
+ 
 2. Create and display Pods
 
 # Create and display PODs
 
-#kubectl apply -f nginx-pod.yaml
+#kubectl apply -f nginx-pod.yaml    -Creates a new resource if it doesn't exist, or updates it if it already exists.
 
-kubectl create -f nginx-pod.yaml
-kubectl get pod
-kubectl get pod -o wide
-kubectl get pod nginx-pod -o yaml
-kubectl describe pod nginx-pod
+kubectl create -f nginx-pod.yaml-----Creates the resource only once.
+kubectl get pod                     --Displays the Pods in the current namespace.
+kubectl get pod -o wide             --Shows additional information about Pods.like ip node
+kubectl get pod nginx-pod -o yaml   --Displays the complete Pod definition in YAML format.
+kubectl describe pod nginx-pod      --Shows detailed information about a specific Pod.log type data
 
 *******************************************************************
 
