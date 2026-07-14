@@ -35,11 +35,11 @@ kubectl describe pod nginx-pod      --Shows detailed information about a specifi
 3. Test & Delete
 
 # To get inside the pod
-kubectl exec -it nginx-pod -- bash
+kubectl exec -it nginx-pod -- bash ---- login to container
 
 
 
-# Expose PODS using NodePort service
+# Expose PODS to internet using NodePort service 
 
 kubectl expose pod nginx-pod --type=NodePort --port=80
 
