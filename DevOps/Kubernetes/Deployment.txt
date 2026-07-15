@@ -9,15 +9,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deploy
+  name: nginx-deploy              --Name of the deployment object
   labels:
-    app: nginx-app
+    app: nginx-app               --alternate tag to refere deployment object
 spec:
-  replicas: 3
-  template:
+  replicas: 3                    --How many replicas of pod we have to create. we have specify in the replica.
+  template:                      -- In the template we have to define the pod and contianer specification
     metadata:
       labels:
-        app: nginx-app
+        app: nginx-app            -- name of the template. Here pod name is automatically generated.
     spec:
       containers:
       - name: nginx-container
@@ -27,7 +27,8 @@ spec:
   selector:
     matchLabels:
       app: nginx-app
-
+Here deployment object identify the template using the selector . in selector we have difined the template name.
+after deploying this manifest file 1st--deployment object will create after that to create the replica of pods it will identify the pod template by using the selector lables.then it will create the replica of pods.
 
 *******************************************************************
 # 2. Create and Display Deployment
