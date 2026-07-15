@@ -28,7 +28,7 @@ spec:
     matchLabels:
       app: nginx-app
 Here deployment object identify the template using the selector . in selector we have difined the template name.
-after deploying this manifest file 1st--deployment object will create after that to create the replica of pods it will identify the pod template by using the selector lables.then it will create the replica of pods.
+after deploying this manifest file 1st--deployment object will create after that it create the difened replica set .then it identify the template what to repicate by using the selector .then create the pods based one how many replica is dfined.
 
 *******************************************************************
 # 2. Create and Display Deployment
