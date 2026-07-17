@@ -490,7 +490,13 @@ Pre-requisites :
 			
 				Create a user in Kubernetes Master 
 				Grant Access to Kubectl
-				
+                    Goto root user then type visudo and give the below command
+                    devopsadmin ALL=(ALL) NOPASSWD: ALL -- whenever devopsadmin user access any system components it should not ask any password
+                    then navigate to devopsadmin user su - devopsadmin and give the below command.
+					mkdir -p $HOME/.kube
+					sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config   -- these command to give access for the devopsadmin user to access the kubectl components
+					sudo chown $(id -u):$(id -g) $HOME/.kube/config
+									
 				Use Publish Over SSH Plugins to connect Kubernetes		
 		
 		
