@@ -495,7 +495,8 @@ Pre-requisites :
                     then navigate to devopsadmin user su - devopsadmin and give the below command.
 					mkdir -p $HOME/.kube
 					sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config   -- these command to give access for the devopsadmin user to access the kubectl components
-					sudo chown $(id -u):$(id -g) $HOME/.kube/config
+					sudo chown $(id -u):$(id -g) $HOME/.kube/config. 
+               once this done come to root user then type reboot.
 									
 				Use Publish Over SSH Plugins to connect Kubernetes		
 		
