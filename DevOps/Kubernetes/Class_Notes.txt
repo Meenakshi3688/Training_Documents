@@ -431,7 +431,7 @@ Day 27 - 16th July 2026
 	ClusterIP Service:
 	
 		- Internal & Default Kubernetes Services
-		
+				Here consider fronend pod and backend pod are present in the same node. when the user sends any request to frondend then the respective data should be fetched from the backend pod.to communicate frond end and backend pods we need this clusterIP service . Here why we can not use the pod ip's to communicate becoz pods are not static if pod goes to exit state then respective IP also deleted. so that clusterIp service is used which creates it's own IP.So cluster IP service is the interface between the frondend pod and backend pod.
 		
 
 CICD Pipeline using Jenkins & Kubernetes
