@@ -388,14 +388,33 @@ Day 27 - 16th July 2026
 	Load Balancer Traffic Routing!
 	
 	
-	- Simple Routing 		
-	
+	- Simple Routing 
+			example
+			Simple websites
+			Single application
+			Static websites
+			Small web applications
+				
 	- Host Based Routing 
+			The load balancer routes traffic based on the Host Header (domain name).
+
+			The domain requested by the user decides which backend receives the request.
+			Use Cases:
+				Multiple websites
+				Multi-tenant applications
+				SaaS applications
 	
 	- Path Based Routing 
-	
+			The load balancer routes traffic based on the URL path after the domain name.
+			Use Cases:
+				Microservices
+				REST APIs
+				Media applications
+				E-commerce sites
 	- Query Based Routing 
-	
+			The load balancer routes requests based on query parameters in the URL.
+
+			A query string starts after a ?.
 	
 
 	www.google.com 
