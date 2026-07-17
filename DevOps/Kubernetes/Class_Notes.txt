@@ -464,7 +464,7 @@ Servers & Tools :
 	Kubernetes_Master 			-> Kubernetes Components
 		- Kubernetes_WorkerNode1
 		- Kubernetes_WorkerNode2
-		
+		Here we have to connect Kubernetes master node to jenkins master node. 
 
 Onboard Applications to CICD Process:
 
