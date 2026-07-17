@@ -482,7 +482,7 @@ Pre-requisites :
 
 	1. Source Code Repository -> pom.xml / Dockerfile / Kubernetes_Manifest files
 	
-	2. Create PAT on DockerHub and Updated it on the Jenkins Credential Manager
+	2. Create PAT on DockerHub and Updated it on the Jenkins Credential Manager ---  Login to DockerHub we need Personal Access Token
 	
 	3. Intergrate Kubernetes Master to Jenkins Master :::
 	
