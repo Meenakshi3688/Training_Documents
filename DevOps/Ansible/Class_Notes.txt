@@ -21,6 +21,60 @@ Day 27 - 16th July 2026
 	- Configuration Management using Ansible :::
 	
 		- Why Ansible?
+         Ansible is an open-source automation tool used to automate IT tasks such as server configuration, application deployment, cloud provisioning, and orchestration.
+
+			Why do we use Ansible?
+			Configuration Management::
+			
+			Configures servers automatically.
+			Example:
+			Install Nginx
+			Create users
+			Update configuration files
+			Start or restart services.
+			
+			Application Deployment:
+			
+			Deploys applications to multiple servers simultaneously.
+			Example:
+			Deploy a Java WAR file to Tomcat.
+			Deploy a Python or Node.js application.
+			Provisioning Infrastructure
+			Creates and configures cloud resources.
+			Works with Azure, AWS, GCP, VMware, etc.
+			Automation::
+			
+			Eliminates repetitive manual tasks.
+			Instead of logging into each server individually, Ansible performs the task on all servers with a single command.
+			
+			Orchestration::
+			
+			Coordinates multiple tasks in the correct order.
+			Example:
+			Create VM
+			Install Java
+			Install Tomcat
+			Deploy application
+			Restart Tomcat
+			Verify the application is running.
+			
+			Consistency
+			Ensures every server is configured the same way.
+			Reduces configuration drift and human errors.
+
+			Yes, you can write shell scripts (Bash) or PowerShell scripts for automation. The question is: why use Ansible instead of scripts?
+
+			The main reason is that Ansible is more reliable, scalable, and easier to manage, especially when working with many servers.
+    		Example::
+			If you have 50 servers, you would need to copy this script to each server and execute it (or write extra logic to do so).
+			Ansible connects to all 50 servers over SSH and performs the task automatically.
+
+			Another important advantage: Idempotency
+
+			Suppose Nginx is already installed.
+
+			Shell script: It runs apt install nginx every time.
+			Ansible: It checks first. If Nginx is already installed and the service is already running, it reports ok and makes no unnecessary changes.
 		
 		- Ansible Architecture & Components 
 		
@@ -57,9 +111,24 @@ Day 28 - 17th July 2026
 		- Ansible controller 
 			- Ansible_Nodes
 
-			- Ansible Controller 
+			- Ansible Controller
+			1. Control Node (Master Node)
+				The machine where Ansible is installed.
+				Executes Ansible commands and playbooks.
+				Connects to managed nodes using SSH or WinRM.
+				No agent is required on remote servers.
+
 			- Ansible Nodes 
+				2. Managed Nodes (Target Nodes)
+				Remote servers managed by Ansible.
+				Can be Linux or Windows machines.
+				Linux uses SSH.
+				Windows uses WinRM.
+				Python is generally required on Linux managed nodes for many modules.
+
 			- Modules 
+			The inventory contains the list of servers Ansible manages.
+
 			- Inventory File
 				- Contains the details of the target servers 
 					- Host Name 
@@ -71,9 +140,11 @@ Day 28 - 17th July 2026
 					Test_servers
 						- Test_Server1,2,3,4,5
 					
-					
-			- Ansible.config file 
-			
+			Roles organize playbooks into a standard directory structure, making large projects easier to maintain.
+		
+   			Facts
+			Facts are information collected about managed nodes.
+			- Ansible.config file .
 			- using SSH Ansible Controller connect to Ansible Nodes.
 
 
