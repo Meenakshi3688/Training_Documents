@@ -126,10 +126,12 @@ Day 28 - 17th July 2026
 				Windows uses WinRM.
 				Python is generally required on Linux managed nodes for many modules.
 
-			- Modules 
-			The inventory contains the list of servers Ansible manages.
+			- Modules ::
+			Modules are reusable units of work that perform specific tasks.
+			
 
-			- Inventory File
+			- Inventory File:
+			The inventory contains the list of servers Ansible manages.
 				- Contains the details of the target servers 
 					- Host Name 
 					- User_Name 
