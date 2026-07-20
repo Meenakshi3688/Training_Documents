@@ -489,7 +489,7 @@ Pre-requisites :
 			Use SSH Connection between Jenkins and Kubernetes Master
 			
 				Create a user in Kubernetes Master 
-				Grant Access to Kubectl
+				Grant Kubectl access for devopsadmin user - we need to follow below steps not this command "usermod -aG docker devopsadmin"
                     Goto root user then type visudo and give the below command
                     devopsadmin ALL=(ALL) NOPASSWD: ALL -- whenever devopsadmin user access any system components it should not ask any password
                     then navigate to devopsadmin user su - devopsadmin and give the below command.
