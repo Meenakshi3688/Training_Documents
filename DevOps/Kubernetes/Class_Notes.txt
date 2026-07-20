@@ -459,7 +459,8 @@ Servers & Purpose :
 Servers & Tools :
 
 	Jenkins_Master 				-> git,jdk,jenkins 		
-		Jenkins_Slave 			-> git,jdk,maven,docker
+		Jenkins_Slave 			-> git,jdk,maven,docker - create devopsadmin user.
+to connect jenkins slave node into master node- go to Nodes in jenkins settings  there add the details.
 		
 	Kubernetes_Master 			-> Kubernetes Components
 		- Kubernetes_WorkerNode1
