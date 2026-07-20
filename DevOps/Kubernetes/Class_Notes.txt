@@ -491,7 +491,7 @@ Pre-requisites :
 				Create a user in Kubernetes Master 
 				Grant Kubectl access for devopsadmin user - we need to follow below steps not this command "usermod -aG docker devopsadmin"
                     Goto root user then type visudo and give the below command
-                    devopsadmin ALL=(ALL) NOPASSWD: ALL -- whenever devopsadmin user access any system components it should not ask any password
+                    devopsadmin ALL=(ALL) NOPASSWD: ALL -- whenever devopsadmin user access any system components it should not ask any password -do ctrl x then y to come  					 out of the visudo.
                     then navigate to devopsadmin user su - devopsadmin and give the below command.
 					mkdir -p $HOME/.kube
 					sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config   -- these command to give access for the devopsadmin user to access the kubectl components
