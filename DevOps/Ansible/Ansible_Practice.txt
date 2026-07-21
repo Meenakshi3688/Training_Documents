@@ -75,7 +75,7 @@ ansible samplenode1 -m shell -a "sleep 20 ; echo 'hi'"
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Ansible Facts!
-
+Here the setup module is the very important module in ansible, where it is used to capture the complete architecture iniermation about the target nodes. 
 ansible samplenode1 -m setup
 ansible samplenode1 -m setup -a "filter=ansible_distribution"
 
