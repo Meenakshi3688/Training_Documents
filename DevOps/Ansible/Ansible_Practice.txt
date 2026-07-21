@@ -1,4 +1,5 @@
 ###update vi etc/ansible/hosts
+Default invetory file on the ansible is the host file.
 Defining of the inventory files to interact withe the target node
 
 [testnodes]                                                     
