@@ -220,7 +220,7 @@ Ansible Playbooks :::
 
 ---
  - hosts: samplenode1
-   gather_facts: false
+   gather_facts: false    -- >> this line is used to bybapss the setup module, beacoz by default setup module will run whenever we run the ansible playbooks.
    vars:
     x: 23
     my_num: 45.67
