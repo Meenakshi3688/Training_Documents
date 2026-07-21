@@ -35,7 +35,7 @@ dbnode2 ansible_ssh_host=172.31.35.100 ansible_ssh_user=ansibleadmin
 Syntax for the Ansible Adhoc Commands::::
 ansible <hosts_name> -m <module_name> -i <inventory_file>
 
-ansible testnodes -m ping 
+ansible testnodes -m ping   -- ping is module to check the connection of the target servers defined in the testnodes file
 
 ansible devnodes -m ping 
 
