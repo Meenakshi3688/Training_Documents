@@ -87,7 +87,7 @@ ansible testnodes -m setup -a "filter=ansible_distribution"
 
 ansible samplenode1 -m copy -a "src=/etc/ansible/file1.txt dest=/home/ansibleadmin"
 
-ansible samplenode1 -m copy -a "src=/etc/ansible/file1.txt dest=/home/ansibleadmin backup=yes"
+ansible samplenode1 -m copy -a "src=/etc/ansible/file1.txt dest=/home/ansibleadmin backup=yes"  ---> backup will maintain the previous version of the file.
 
 ##Transfer a file from Ansible Nodes to Ansible Controller using fetch Module
 
