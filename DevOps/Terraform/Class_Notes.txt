@@ -173,6 +173,7 @@ This creates an AWS tag on the EC2 instance.
 AWS will display this value in the EC2 console.
 
 Terraform state is a file (terraform.tfstate) that stores metadata about the infrastructure Terraform manages. It maps the resources in the Terraform configuration to the actual resources in the cloud provider, allowing Terraform to determine what changes need to be made during terraform plan and terraform apply. It creates when we uses "terraform apply" command.
+In case state file is deleted or missed we can get by terraform import command , here we need the server id of that resource.
 __________________________________________________________
 	
 
