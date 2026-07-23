@@ -154,7 +154,24 @@ resource "aws_instance" "instance1" {
   }
 }
 		
-		
+___________________________________________________________
+aws_instance and example
+resource "aws_instance" "example"
+aws_instance → This is the resource type.
+It tells Terraform what kind of AWS resource to create.
+Here, it means an EC2 instance.
+example → This is the Terraform resource name (local name).
+It is only used inside your Terraform code to identify this resource.
+AWS does not see this name.
+
+tags = {
+  Name = "HelloWorld"
+}
+
+This creates an AWS tag on the EC2 instance.
+
+AWS will display this value in the EC2 console.
+__________________________________________________________
 	
 
 
