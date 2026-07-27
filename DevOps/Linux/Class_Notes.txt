@@ -982,6 +982,14 @@ Why to use Programming/Scripting Languages :::
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A simple script to print Hello World on terminal using echo command
 
+#!/bin/bash::
+is called a shebang (or hashbang). It tells the operating system which interpreter should be used to execute the script.
+
+Breakdown
+Part	Meaning	Explanation
+#!	Shebang	Indicates that the file should be executed using the interpreter specified after it.
+/bin/bash	Bash Interpreter	Specifies that the script should be run using the Bash shell located at /bin/bash.
+
 Source Code:
 
 #!/bin/bash
