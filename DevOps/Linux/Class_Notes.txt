@@ -1565,7 +1565,17 @@ Perl Scripting Perl Language
 	
 	
 	
-	
+What is /etc/profile?
+
+/etc/profile is a system-wide configuration file that is executed when a user logs in to a Linux system.
+
+It is commonly used to set:
+
+Environment variables
+PATH variable
+Default shell settings
+Aliases (sometimes)
+Login scripts	
 	
 	
 
@@ -1577,3 +1587,35 @@ PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
 
 export MAVEN_HOME="/usr/share/maven"
 PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin	
+
+
+
+_____________________-----
+
+Important directories
+Directory	Purpose
+/etc/	System configuration files
+/var/log/	Log files
+/var/spool/cron/	User cron jobs
+/home/	User home directories
+/root/	Root user's home directory
+/usr/local/bin/	Custom executables
+/opt/	Third-party software installations
+/tmp/	Temporary files
+/proc/	Kernel and process information
+/dev/	Device files
+/boot/	Bootloader and kernel files
+
+
+
+Interviewers usually ask questions like:
+
+Where are Linux user accounts stored? → /etc/passwd
+Where are passwords stored? → /etc/shadow
+How do you configure SSH? → /etc/ssh/sshd_config
+How do you add environment variables? → /etc/profile or ~/.bashrc
+How do you mount a filesystem permanently? → /etc/fstab
+How do you schedule a job? → crontab or /etc/crontab
+How do you map a hostname to an IP? → /etc/hosts
+
+These questions cover the files you'll use most often.
