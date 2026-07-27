@@ -1533,7 +1533,13 @@ cd tomcat/bin/
 
 
 
-A script to demostrate usage of sed command
+A script to demostrate usage of sed command:
+
+ the sed (Stream Editor) command is used to search for text and replace it.
+
+s = substitute (replace)
+Bash = text to find
+Perl = replacement text
 
 Source Code:
 
@@ -1541,6 +1547,16 @@ Source Code:
 
 # Basic text substitution using sed
 echo "Bash Scripting Bash Language" | sed 's/Bash/Perl/'
+
+output:
+Perl Scripting Bash Language.
+
+If i want to replace all Bash
+
+echo "Bash Scripting Bash Language" | sed 's/Bash/Perl/g'
+
+output::
+Perl Scripting Perl Language
 
 	
 	
