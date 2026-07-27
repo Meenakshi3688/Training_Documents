@@ -97,9 +97,9 @@ Day 9 - 12th June 2026
 	
 	VCS Types:
 		
-		- Local VCS 
-		- Centralized VCS 
-		- Distributed VCS 
+		- Local VCS :::::A Local Version Control System stores all versions of files only on your local computer.There is no server and no collaboration.
+		- Centralized VCS ::::A Centralized Version Control System stores the code and its history on one central server.Developers connect to the server to download and upload changes.
+		- Distributed VCS :::A Distributed Version Control System gives every developer a complete copy of the repository, including the entire history.This is the model used by Git.
 		
 		
 	GIT :
@@ -347,7 +347,7 @@ Day 11 - 16th June 2026
 	
 		- git log 
 		
-		- git log --oneline
+		- git log --oneline  :  Shows each commit as a short commit ID followed by the commit message.
 		
 		- git log -3 
 		
