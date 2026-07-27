@@ -349,7 +349,7 @@ Day 11 - 16th June 2026
 		
 		- git log --oneline  :  Shows each commit as a short commit ID followed by the commit message.
 		
-		- git log -3 -- 	Shows only the latest 3 commits.
+		- git log -3              :Shows only the latest 3 commits.
 		
 		- git log --oneline -3 
 		
