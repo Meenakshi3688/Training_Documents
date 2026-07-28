@@ -320,6 +320,9 @@ Day 21 - 6th July 2026
 			docker run -it ubuntu bash
 			
 			docker run -it --mount source=pl-vol1,destination=/pl-vol1 ubuntu bash
+
+       		A volume cannot be added to an existing container after it has been created. Volumes are mounted only during container creation using docker run -v (or by                   defining them in Docker Compose). If you need a volume, you must create a new container with the required volume mount.
+
 			
 Next :::
 
