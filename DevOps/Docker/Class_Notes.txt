@@ -195,7 +195,9 @@ Day 21 - 6th July 2026
 		
 		- docker ps 					# To get the list Active/Running Containers in the Local Machine 
 		
-		- docker ps -a 					# To get the list of Active and Inactive Containers in Local Machine
+		- docker ps -a 					# To get the list of Active and Inactive Containers in Local Machine.
+       docker build →                     Creates an Image
+      docker run →                       Creates and Starts a Container
 		
 	Access DockerHub:
 	
