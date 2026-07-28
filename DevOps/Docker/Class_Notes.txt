@@ -339,7 +339,9 @@ Day 22 - 7th July 2026
 		- Docker Commit :::
 				
 				- It is used to Create a Container Image based on the existing Container reference.
-				- Used by the Infra-Structure Management Team
+				- Used by the Infra-Structure Management Team.
+                ✅ Containers are created from Docker images.
+				✅ New Docker images can be created from containers using docker commit.
 			
 			Syntax :::
 			
