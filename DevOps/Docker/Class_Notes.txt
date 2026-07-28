@@ -409,7 +409,10 @@ Day 22 - 7th July 2026
 		Syntax: 
 		
 			docker build -t <dockerhub_repository_name>/<New_Image_Name>:<tag> .		# '.' refers to Dockerfile reference.			
-		
+		   if we use this above build command with repository name then we no need to push again?
+				-No. You still need to run docker push.
+				-This command only builds the image locally and gives it a Docker Hub-compatible name.
+				The image is still stored on your local machine.
 			Eg.: 
 			
 			docker build -t loksaieta/pl-java-mvn-build .
