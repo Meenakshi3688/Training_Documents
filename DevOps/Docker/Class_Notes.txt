@@ -395,7 +395,8 @@ Day 22 - 7th July 2026
 	
 				- It is used to Create a Container Image from the scratch based on the Dockerfile Instructions
 				- Used by the Developers to Containerize the Applications
-		
+				- once it build where the image stored?
+     				Docker stores the image in the local Docker image repository  --->>>>>>>>> /var/lib/docker/
 		
 		- vi Dockerfile 
 		
