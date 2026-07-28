@@ -656,11 +656,11 @@ Login to Gmail :::
 
 Click Manage Account Settings
 
-@Left side panel - select Security 
+@Left side panel - select Security or security and sign-in
 
-MFA/Two-Way Authentication --> mobile#
+MFA/Two-Way Authentication --> mobile# in mobile enter email password then turn on the 2-way authentication then do search.
 
-Search for App password in the same page
+Search for App password in the same page-- Give any app name 
 
 Name:
 Mail
