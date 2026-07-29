@@ -94,7 +94,33 @@ Day 23 - 9th July 2026
 			
 	- Kubernetes Architecture Components ::::
 
+To deploy the docker-image into any environment like QA,or dev or prod, we can achive this using kubernetes.
+Steps:: Manifest-file defines the properties of the pods written using yaml or json format.
+		--we have the image using this image we have to create pods- pods contains contianers.
+Manifest file contains the properties of the pods::below are the properties which needs to create pods.
+which pods we have to create
+how many pods we have Creates
+what type of volume we need
+service definitions
 
+
+You write all these instructions in a YAML file.
+________________________________________
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: nginx-app
+
+spec:
+  replicas: 3
+
+  template:
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+_________________________________
 		- Kubernetes Architecture components :::
 		
 			API_Server 				--> # Acts as an interface to the kubernetes 
