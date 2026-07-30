@@ -333,9 +333,11 @@ Spec::
 			--> Replicaset uses the Set Based Operator
 			--> Used to replicate the pods and able to scale up/down
 			--> The Replicasets will be automatically created, while creating Deployment Controller Object.
+			--> Replicasets do not maintain the high availability, means whenever there is any upgrade-or downgrade , then some downtime.
+			-->So to maintain high availability and without any down time application should run we created the deployment controller object.
 		
 		
-		Deployment Controller Object :::
+		Deployment Controller Object ::: In real-time we never deploy a pod with one instance, we need to create replicas of pods, controller manager will maintain the pods 										 should run in the desired state. these things can be handled by deployment controller object.
 		
 			--> It is used to deploy the pods and ensure high availability of pods by creating pod replicas 
 			--> 1. Create Muliple instance/replicas/copies of pods 
