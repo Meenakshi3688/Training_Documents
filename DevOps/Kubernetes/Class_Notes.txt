@@ -367,7 +367,7 @@ Spec::
 		
 	- Kubernetes Namespace :
 	
-		- Logical Partitioning of Kubernetes Cluster.
+		- Logical Partitioning of Kubernetes Cluster. Namespace is just like folder, where we create isolated files.
 		- Can be created based on the Environments(DEV/QA/UAT/PROD)/Teams(Dev_team1/Dev_team2/QA_Team)
 		
 		
