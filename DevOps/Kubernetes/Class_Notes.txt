@@ -259,8 +259,43 @@ Day 24 - 10th July 2026
 Day 25 - 13th July 2026
 #########################
 			
-	- Pods
-	
+	- Pods:::
+		-A Pod is the smallest unit in Kubernetes.
+		-Think of a Pod as a small house.
+		Inside the house, one or more containers can live.
+		Usually, one Pod contains one container.
+		All containers inside the Pod share the same network and storage.
+
+ 		Sometimes one application is not enough.
+		We may need another helper container.
+		That helper container is called a Sidecar Container.
+			Common Sidecar Uses
+			Log collection
+			Monitoring
+			Proxy
+			Security
+		Pod Networking
+			-Every Pod gets its own IP address.
+			-Pods communicate using these IP addresses.
+
+		IntraPod Communication::
+			Intra = Inside
+			IntraPod means
+			Communication between containers inside the same Pod.
+		they share
+			Same IP
+			Same localhost
+			Container A can communicate with Container B using
+				localhost
+			Example
+				localhost:8080
+
+		InterPod Communication::
+			Inter = Between
+			InterPod means
+			Communication between different Pods.
+			Pod A sends requests to Pod B using Pod B's IP or, more commonly, through a Kubernetes Service.
+		
 	- Namespaces 
 	
 	- Controller Objects :::
