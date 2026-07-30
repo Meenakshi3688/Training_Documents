@@ -120,6 +120,8 @@ Step7::Kubelet share the all the image info to the CRI-where CRI connects to the
 
 Step8::To enable the pod networking each pods have the unique IP-Address. IP-address can be assigned by the Kube-proxy.
 
+Step9::Controlled Manges responsibilty to executes the pod in it's own desired state. Means in manifest-file we have written 3-pods are needed then controlled manager maintain that . if one pod goes down immediately controller manager creates
+
 
 
 You write all these instructions in a YAML file.
