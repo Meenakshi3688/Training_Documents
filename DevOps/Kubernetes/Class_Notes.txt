@@ -103,6 +103,24 @@ how many pods we have Creates
 what type of volume we need
 service definitions
 
+step2:: Once the manifest file is submitted into the master node through the kubectl. The request 1st received by the API Server
+API server is the interface between the user and the Kubernetes master node. When the request reached it will verify the whether the user is authorised or not. Once the users authorization and authentication is verified . Then it will verify the Manifest file. whatever defined in the manifest file is fishableor not to deploy.
+Once the request is validate successfully then the req details will be update in the ETCD.
+
+Step3.ETCD is one of the Kubernetes database. How many pods are deployed like this also info is present.
+
+Step4: once the info is passed to the ETCD then API -server notify the Scheduler. Now here Scheduler connect to the ETCD through the API-server and capture the info , and check the healthy worker-node to deploy the pods. How this scheduler identify the healthy worker -node means by referring the manifest-file. If Manifest file contains i want 1TB of space . Then scheduler verify which node is capable then that node will be chosen for the deployment. Again the node details will be updated in the ETCD.
+
+Step5::Once the API-Server receives these information from the ETCD, then it will connect to that healthy-node. In the healthy node we have kubelet. API-srevre sends the all info to the kucelet
+
+Step6: Kubelet is the Kubernetes agent , that will deploy the pods. Kubelet verify the req. So here to deploy the posd/container we need the image.
+Here image is present in the docker-hub.
+
+Step7::Kubelet share the all the image info to the CRI-where CRI connects to the docker-hub and download the respective image.Once the image is downloaded then kubelet will use create the pod. Containers are present inside the pods
+
+Step8::To enable the pod networking each pods have the unique IP-Address. IP-address can be assigned by the Kube-proxy.
+
+
 
 You write all these instructions in a YAML file.
 ________________________________________
