@@ -295,7 +295,30 @@ Day 25 - 13th July 2026
 			InterPod means
 			Communication between different Pods.
 			Pod A sends requests to Pod B using Pod B's IP or, more commonly, through a Kubernetes Service.
-		
+
+What the info we need to have in the yaml file::
+---> Whenever we create any yaml file there is 4 main key conecept should be present
+		appversion,metadata,kind and spec
+ apiVersion::This tells Kubernetes which API version to use for creating the resource.
+kind::This tells Kubernetes what resource to create.
+Metadata:Metadata means information about the object.
+         metadata stores
+			Name
+			Labels
+			Namespace
+			Annotations
+Spec::
+		Spec means Specification.
+		It defines how the Pod should run.
+		Think of it as a blueprint.
+		It includes:
+			Containers
+			Images
+			Ports
+			Volumes
+			Environment variables
+			Resources (CPU/Memory)
+			
 	- Namespaces 
 	
 	- Controller Objects :::
